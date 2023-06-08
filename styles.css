@@ -1,0 +1,129 @@
+/* diseño para tablets y laptops */
+@media screen and (min-width:960px) {
+  .grid-container {
+    width: 80%;
+    max-width: 960px;
+}
+}
+
+
+/* diseño para tdesktop*/
+@media screen and (min-width:1200px) {
+  .grid-container {
+    width: 90%;
+    max-width: 1920px;
+}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-decoration-color: #ffffff;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-decoration-color: #FF7926;
+}
+
+.menu {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  height: 80px;
+  line-height: 75px;
+  gap:40px;
+  display:flex;
+  justify-content: center;
+  background-color:#FD7FCC;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #ffffff;
+  justify-items:normal;
+  align-items: stretch;
+}
+
+.grid-item {
+  font-size: 50px;
+  /* font-variant-caps: all-small-caps; */
+  font-weight: bolder;
+  text-align: center;
+}
+
+#decoration {
+  display:flex;
+  align-items:center;
+}
+
+.interno-caja{
+  display:flex;
+  align-items:stretch;
+}
+
+.logo {
+  background-color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  border-radius: 5px;
+  /* vertical-align: auto; */
+  padding-bottom: 5px;
+  padding-top: 5px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.blog {
+  background-color: #FF7926;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  grid-row: 1 / 4;
+  grid-column: 1 / 1;
+}
+
+.servicios {
+  background-color: #03C4A1;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.quienes {
+  background-color: #03C4A1;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+.footer {
+  background-color: #FD7FCC;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}

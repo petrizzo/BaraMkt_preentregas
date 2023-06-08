@@ -1,0 +1,232 @@
+
+/* diseño para tablets y laptops */
+@media screen and (min-width:960px) {
+  .grid-container {
+    width: 80%;
+    max-width: 960px;
+}
+}
+
+/* diseño para tdesktop*/
+@media screen and (min-width:1200px) {
+  .grid-container {
+    width: 90%;
+    max-width: 1920px;
+}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 54px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-decoration-color: #ffffff;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-decoration-color: #FF7926;
+}
+
+.menu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    height: 60px;
+    line-height: 55px;
+    gap:40px;
+    display:flex;
+    justify-content: center;
+    background-color:#FD7FCC;
+}
+
+.menu-footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  height: 60px;
+  line-height: 55px;
+  gap:40px;
+  display:flex;
+  justify-content: center;
+  background-color:aqua;
+}
+
+.formulario {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.formulario-contenido{
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  grid-column: 2;
+}
+
+.grid-quienes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px;
+  background-color: #ffffff;
+  justify-items:normal;
+  align-items: stretch;
+}
+
+.grid-item {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#decoration {
+  display:flex;
+  align-items:center;
+}
+
+.caja1{
+  background-color: black;
+  display:inline;
+  align-items:center;
+  border-radius: 5px;
+  grid-column: 1;
+}
+
+.caja2 {
+  background-color: #aaaa00;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  border-radius: 5px;
+  grid-column: 2;
+}
+
+.caja3{
+  background-color: #777776;
+  display:inline;
+  align-items:center;
+  border-radius: 5px;
+  grid-column:1;
+}
+
+.caja4 {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  border-radius: 5px;
+  grid-column: 2;
+}
+
+.interno-caja{
+  display:flex;
+  align-items:stretch;
+  font-family: 'Montserrat', serif;
+  font-size: 18px;
+}
+
+.seccion{
+  background-color: white;
+  background-size: cover;
+  display:grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+
+.seccion-grid {
+  border-style: groove;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr;
+  gap: 10px 10px;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  justify-items:normal;
+  align-items: center;
+}
+
+.mision {
+  width: 250px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.mision-texto {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  border-left: 1px solid black;
+  padding-left: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.vision {
+  width: 250px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2; 
+  grid-row: 1;
+}
+
+.vision-texto {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  border-left: 1px solid black;
+  padding-left: 5px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.valores {
+  width: 250px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.valores-texto {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  border-left: 1px solid black;
+  padding-left: 5px;
+  border-radius: 5px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3;
+  grid-row: 2;
+}
