@@ -1,24 +1,13 @@
-let informacion = { nombreApellido : prompt("Ingrese su nombre y su apellido"),
-    eMail : prompt("Ingrese su email"), telefono : prompt("Ingrese su numero de telefono"),
-};
-let informacionConvertida = JSON.stringify(informacion);
-// let baseDatos = JSON.parse(informacionConvertida);
-
-// let datosArray = JSON.push(informacion);
-// let actualizarJSON = JSON.stringify(datosArray)
- 
-// Declarar un array de objetos y almacenar el array en formato JSON en storage.
-
 
 const objetoUno = {
-    nombre: "Celeste",
-    apellido: "Perez",
+    nombreApellido: "Celeste Pérez",
     eMail: "tzirw@example.com",
+    telefono : "12342345",
 };
 const objetoDos = {
-    nombre: "Blanca",
-    apellido: "Lopez",
+    nombreApellido: "Blanca López",
     eMail: "tzirw_1@example.com",
+    telefono : "1232345",
 };
 const arrayObjetos = {
 obj1: objetoUno,
@@ -27,6 +16,18 @@ obj2: objetoDos,
 
 let arrayJSON = JSON.stringify(arrayObjetos);
 localStorage.setItem('arrayObjetos', arrayJSON);
+
+let informacion = { nombreApellido : prompt("Ingrese su nombre y su apellido"),
+    eMail : prompt("Ingrese su email"), telefono : prompt("Ingrese su numero de telefono"),
+};
+let informacionConvertida = JSON.stringify(informacion);
+
+// let datosArray = JSON.push(informacion);
+// let actualizarJSON = JSON.stringify(datosArray)
+ 
+// Declarar un array de objetos y almacenar el array en formato JSON en storage.
+
+
 
 // alert("El usuario" + ' ' + nombreApellido + ' ' + "con el correo" + ' ' + eMail + ' ' + "y el teléfono" + ' ' + telefono + " ha sido agregado");
 
@@ -44,9 +45,9 @@ localStorage.setItem('arrayObjetos', arrayJSON);
 
 // almacenamos en localStorage
 
-localStorage.setItem('nombreApellido', 'nombreApellido');
-localStorage.setItem('eMail', 'eMail');
-localStorage.setItem('telefono', 'telefono');
+localStorage.setItem('nombreApellido', 'Maria Tato');
+localStorage.setItem('eMail', 'tatomaria@gmail.com');
+localStorage.setItem('telefono', '1234567');
 
 // accediendo a información del localstorage
 
