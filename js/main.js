@@ -1,29 +1,22 @@
-const url = 'https://ajayakv-rest-countries-v1.p.rapidapi.com/rest/v1/all';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-		'X-RapidAPI-Host': 'ajayakv-rest-countries-v1.p.rapidapi.com'
-	}
-};
+document.addEventListener('DOMContentLoaded', () => {
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
+const selectDrop = document.querySelector('#paises');
+
+fetch('https://restcountries.com/v3.1/all').then(res => {
+
+	return res.json();
+}). then(data => {
+	let output = "";
+	data.forEach(pais => {
+		console.log(pais.name);
+		output += `<option>${pais.name}</option>`;
+		console.log(output);
+	});
+
+selectDrop.innerHTML = output;
+
+}).catch(error => {
 	console.error(error);
-}
+})	
 
-// https://restcountries.com/v3.1/all?fields=name
-
-let users;
-
-fetch('https://reqres.in/api/users')
-    .then((response) => response.json())
-    .then((data) => {
-        const users = data.data
-        console.log(users) })
-    .catch((error) => {
-        console.log(error);
-})
+});
