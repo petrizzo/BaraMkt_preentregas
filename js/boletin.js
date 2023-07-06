@@ -11,14 +11,15 @@ const objetoDos = {
     telefono : "1232345",
 };
 
+
 // Declarar un array de objetos y almacenar el array en formato JSON en storage.
 
 let arrayObjetos = [objetoUno,objetoDos];
 // let total = arrayObjetos.length;
 // console.log(total);
 
-let informacion = { nombreApellido : prompt("Ingrese su nombre y su apellido"),
-    eMail : prompt("Ingrese su email"), telefono : prompt("Ingrese su numero de telefono"),
+let informacion = { nombreApellido : prompt("Ingrese su nombre y su apellido"), 
+    telefono : prompt("Ingrese su numero de telefono"), eMail : prompt("Ingrese su email")
 };
 
 let informacionConvertida = JSON.stringify(informacion);

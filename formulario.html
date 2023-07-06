@@ -28,15 +28,16 @@
         <h2>Contáctenos</h2>
         <h3>Para mayor información o asesoramiento, complete el formulario y nos comunicaremos a la brevedad.</h3></div>
         <main>
-          <form>
+          <form name="form1">
             <div class="formulario">
               <div class="form-group formulario-contenido" >
                 <label for="nombrecompleto">Nombre completo</label>
                 <input type="text" class="form-control form-control-lg" id="nombrecompleto" placeholder="Introduce tu nombre"></div><br>
               <div class="form-group formulario-contenido">
                   <label for="Email1">Email address</label>
-                  <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="correo">
+                  <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="correo" onclick="ValidateEmail(document.form1.Email1)>
                   <small id="emailHelp" class="form-text text-muted">No compartiremos tu información con terceros.</small>
+                  <script src="./js/validaciones.js"></script>
               </div><br>
                 <div class="form-group formulario-contenido">
                   <label for="telefono">Número de teléfono con código de área/operadora</label>
