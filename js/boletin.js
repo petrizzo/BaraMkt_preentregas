@@ -1,3 +1,4 @@
+//Base de datos
 
 const objetoUno = {
     nombreApellido: "Celeste Pérez",
@@ -9,51 +10,28 @@ const objetoDos = {
     eMail: "tzirw_1@example.com",
     telefono : "1232345",
 };
-const arrayObjetos = {
-obj1: objetoUno,
-obj2: objetoDos,
-};
 
-let arrayJSON = JSON.stringify(arrayObjetos);
-localStorage.setItem('arrayObjetos', arrayJSON);
+// Declarar un array de objetos y almacenar el array en formato JSON en storage.
+
+let arrayObjetos = [objetoUno,objetoDos];
+// let total = arrayObjetos.length;
+// console.log(total);
 
 let informacion = { nombreApellido : prompt("Ingrese su nombre y su apellido"),
     eMail : prompt("Ingrese su email"), telefono : prompt("Ingrese su numero de telefono"),
 };
+
 let informacionConvertida = JSON.stringify(informacion);
+arrayObjetos.push(informacion);
+// let total2 = arrayObjetos.length;
+// console.log(total2);
 
-// let datosArray = JSON.push(informacion);
-// let actualizarJSON = JSON.stringify(datosArray)
- 
-// Declarar un array de objetos y almacenar el array en formato JSON en storage.
+// Almacenamos en localStorage
+console.log(informacion);
+localStorage.setItem('nombreApellido', informacion.nombreApellido);
+localStorage.setItem('eMail', informacion.eMail);
+localStorage.setItem('telefono', informacion.telefono);
 
+// Imprimimos alert para validar que la información se guardó
 
-
-// alert("El usuario" + ' ' + nombreApellido + ' ' + "con el correo" + ' ' + eMail + ' ' + "y el teléfono" + ' ' + telefono + " ha sido agregado");
-
-
-//Base de datos
-
-// let arrayJson = {
-//     "Celeste":"Perez",
-//     "tzirw@example.com": "Blanca",
-//     "Lopez":"tzirw_1@example.comLopez",
-//     };
-//     let jsonConvertido = JSON.parse(arrayJson);
-//     alert(jsonConvertido)
-
-
-// almacenamos en localStorage
-
-localStorage.setItem('nombreApellido', 'Maria Tato');
-localStorage.setItem('eMail', 'tatomaria@gmail.com');
-localStorage.setItem('telefono', '1234567');
-
-// accediendo a información del localstorage
-
-let nombre = localStorage.getItem('nombreApellido');
-let correo = localStorage.getItem('eMail');
-let numero = localStorage.getItem('telefono');
-
-alert("El usuario" + ' ' + nombre + ' ' + "con el correo" + ' ' + correo + ' ' + "y el teléfono" + ' ' + numero + " ha sido agregado");
-
+alert("El usuario" + ' ' + informacion.nombreApellido + ' ' + "con el correo" + ' ' + informacion.eMail + ' ' + "y el teléfono" + ' ' + informacion.telefono + " ha sido agregado satisfactoriamente");
